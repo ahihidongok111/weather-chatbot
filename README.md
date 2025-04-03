@@ -1,7 +1,7 @@
 # Weather Chatbot Application
 
 ## Overview
-This is a weather chatbot application that provides users with real-time weather forecasts using an AI-powered assistant. The chatbot understands natural language queries and retrieves weather information based on user input. It is built using **JavaFX** for the frontend, **Python (FastAPI)** for the backend, and an **open-source model from HuggingFace** for the chatbot's core. Weather data is fetched using the **Open-Meteo API**.
+This is a weather chatbot application that provides users with real-time weather forecasts using an AI-powered assistant. The chatbot understands natural language queries and retrieves weather information based on user input. It is built using **JavaFX** for the frontend, **Python (FastAPI)** for the backend, and an **open-source LLM from HuggingFace** for the chatbot's core. Weather data is fetched using the **Open-Meteo API**.
 
 ## Features
 - Conversational AI chatbot for weather-related queries
