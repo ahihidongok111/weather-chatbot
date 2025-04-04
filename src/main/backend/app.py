@@ -3,8 +3,6 @@ from pydantic import BaseModel
 from services.llm import load_agent
 import os
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
-
 app = FastAPI()
 agent = load_agent()
 
