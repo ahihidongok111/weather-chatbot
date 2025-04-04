@@ -21,30 +21,20 @@ def get_weather_data(location: Annotated[str, "location to get weather data"]) -
 
 def load_agent():
     llm = HuggingFaceEndpoint(
-        repo_id="HuggingFaceH4/zephyr-7b-beta",
+        repo_id="meta-llama/Llama-3.2-3B-Instruct",
+        task='text-generation'
     )
 
     tools = [get_weather_data]
 
     memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
-    SYSTEM_PROMPT = """You are a helpful and friendly weather assistant. 
-        - Always provide concise and accurate weather information.
-        - If a user asks about multiple locations, respond for each separately.
-        - If you don’t know an answer, just say so.
-        - If the user asks an irrelevant question, try not to answer.
-        - Do not include your thoughts in the output.
-        """
-
     agent = initialize_agent(
         tools=tools,
         llm=llm,
-        agent=AgentType.CONVERSATIONAL_REACT_DESCRIPTION,  # Use conversational agent type
+        agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,  # Use conversational agent type
         memory=memory,  # Add memory to agent
-        verbose=False,
-        agent_kwargs={
-            "system_message": SYSTEM_PROMPT
-        }
+        verbose=False
     )
     return agent
 

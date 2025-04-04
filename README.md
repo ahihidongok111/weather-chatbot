@@ -41,7 +41,7 @@ This is a weather chatbot application that provides users with real-time weather
    ```
 3. Run the FastAPI backend:
    ```sh
-   uvicorn main:app --reload
+   python src/main/backend/app.py
    ```
 
 ### **Frontend Setup**
