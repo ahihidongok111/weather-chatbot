@@ -44,18 +44,12 @@ This is a weather chatbot application that provides users with real-time weather
    python src/main/backend/app.py
    ```
 
-### **Frontend Setup**
-1. Navigate to the frontend folder:
-   ```sh
-   cd ../frontend
-   ```
-2. Compile and run the JavaFX application:
-   ```sh
-   mvn clean javafx:run
-   ```
-
 ## Usage
-1. Launch the JavaFX application.
-2. Enter a city name or country to get the weather forecast.
-3. Ask follow-up questions (e.g., "What about tomorrow?").
-4. The chatbot will respond based on the latest weather data.
+Launch the JavaFX application and enjoy!
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8c1559bd-ed05-458f-927c-055bac2a542a" width="500">
+</p>
+
+
+
